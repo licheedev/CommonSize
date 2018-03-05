@@ -3,6 +3,8 @@ Android通用屏幕适配方案
 
 ## 原理 smallestWidth
 https://developer.android.com/guide/practices/screens_support.html#NewQualifiers
+关键的地方就是sw后面数值的单位是`dp`
+
 
 ## 使用
 
@@ -21,9 +23,16 @@ allprojects {
 
 ```
 dependencies {
-        // 待定
+        // 随便选一个，没有就按照下面配置重新生成自己要的
+        // 公司美工喜欢做iphone(750*1334)的图，就任意选一个w750的就行了
+        // 本人所在公司的广告机项目做的图是1080P的，所以有个w1080的配置
+        compile 'com.github.licheedev.CommonSize:common_size_w1080_n1920:1.0'
+        compile 'com.github.licheedev.CommonSize:common_size_w750_n1334:1.0'
+        compile 'com.github.licheedev.CommonSize:common_size_w750_n1000:1.0'
 }
 ```
+
+没有合适的话，就按照下面配置重新生成一个module，复制到自己项目里面，然后 `compile project(':生成的模块名')`导入即可
 
 ## 生成新的尺寸配置
 
