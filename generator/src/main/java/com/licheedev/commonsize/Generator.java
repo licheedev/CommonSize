@@ -17,8 +17,9 @@ public class Generator {
         for (OutputConfig outputConfig : config.outputConfigs) {
             File destModule = new File(outputConfig.getModuleName());
 
+            FileUtil.removeFile(destModule);
+            
             if (config.justDelete) {
-                FileUtil.removeFile(destModule);
                 continue;
             }
 
