@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.licheedev.commonsize.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_sw"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_100dp"
+        android:background="#e97d7d"
+        android:gravity="center"
+        android:text="match_parent"
+        android:textSize="@dimen/normal_36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="@dimen/normal_749dp"
+        android:layout_height="@dimen/normal_100dp"
+        android:background="#37a42d"
+        android:gravity="center"
+        android:text="common_size_749dp"
+        android:textSize="@dimen/normal_36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="@dimen/normal_750dp"
+        android:layout_height="@dimen/normal_100dp"
+        android:background="#2e9ed2"
+        android:gravity="center"
+        android:text="common_size_750dp"
+        android:textSize="@dimen/normal_36sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
