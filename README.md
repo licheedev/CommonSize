@@ -3,6 +3,7 @@ Android通用屏幕适配方案
 
 ## 原理 smallestWidth
 https://developer.android.com/guide/practices/screens_support.html#NewQualifiers
+
 关键的地方就是sw后面数值的单位是`dp`
 
 
