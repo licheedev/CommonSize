@@ -19,11 +19,11 @@
         android:textStyle="bold" />
 
     <TextView
-        android:layout_width="@dimen/normal_749dp"
+        android:layout_width="@dimen/normal_745dp"
         android:layout_height="@dimen/normal_100dp"
         android:background="#37a42d"
         android:gravity="center"
-        android:text="common_size_749dp"
+        android:text="common_size_745dp"
         android:textSize="@dimen/normal_36sp"
         android:textStyle="bold" />
 

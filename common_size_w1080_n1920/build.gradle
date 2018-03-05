@@ -23,5 +23,3 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
-
-apply from: '../jitpack.gradle'
