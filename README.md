@@ -11,8 +11,8 @@ https://developer.android.com/guide/practices/screens_support.html#NewQualifiers
 * 设备的sw不会有太多，没有合适的配置的话，会使用最接近设备最小宽度的那个较小的配置（如没有小米mix2的392的话，会用384这个配置，误差不会很大）
 * 预览应该无压力，毕竟sw列表就是根据官方模拟器配置列表得来的
 
-获取最小宽度的代码
 ```java
+// 获取最小宽度的代码
 Configuration config = getResources().getConfiguration();
 int smallestScreenWidthDp = config.smallestScreenWidthDp;
 ```
