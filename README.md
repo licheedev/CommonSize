@@ -6,6 +6,9 @@ https://developer.android.com/guide/practices/screens_support.html#NewQualifiers
 
 关键的地方就是sw后面数值的单位是`dp`
 
+* 跟hongyang的方案不同，不会用绝对分辨率适配，而使用sw（最小宽度）限定符方案
+* 只关注最小宽度，无视高度，不会受有/没有虚拟导航键影响，也可以适配18:9的全面屏
+* 设备的sw不会有太多，没有合适的配置的话，会使用最接近设备最小宽度的那个较小的配置（如没有小米mix2的392的话，会用384这个配置，误差不会很大）
 
 ## 使用
 
@@ -27,9 +30,9 @@ dependencies {
         // 随便选一个，没有就按照下面配置重新生成自己要的
         // 公司美工喜欢做iphone(750*1334)的图，就任意选一个w750的就行了
         // 本人所在公司的广告机项目做的图是1080P的，所以有个w1080的配置
-        compile 'com.github.licheedev.CommonSize:common_size_w1080_n1920:1.1'
-        compile 'com.github.licheedev.CommonSize:common_size_w750_n1334:1.1'
-        compile 'com.github.licheedev.CommonSize:common_size_w750_n1000:1.1'
+        compile 'com.github.licheedev.CommonSize:common_size_w1080_n1920:1.2'
+        compile 'com.github.licheedev.CommonSize:common_size_w750_n1334:1.2'
+        compile 'com.github.licheedev.CommonSize:common_size_w750_n1000:1.2'
 }
 ```
 
