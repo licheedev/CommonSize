@@ -90,6 +90,12 @@ just_delete=false
 ```
 
 ## 运行情况
+小米mix2运行情况
+
+![mix2](https://raw.githubusercontent.com/licheedev/CommonSize/master/pics/mix2.jpg)
+
+其他机型
+
 ![荣耀8](https://raw.githubusercontent.com/licheedev/CommonSize/master/pics/rongyao8.jpg)
 ![as_preview](https://raw.githubusercontent.com/licheedev/CommonSize/master/pics/as_preview.png)
 ![nexus_4](https://raw.githubusercontent.com/licheedev/CommonSize/master/pics/nexus_4.png)
