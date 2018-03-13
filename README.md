@@ -78,6 +78,7 @@ just_delete=false
 320 // 320*480(mdpi)、480*800(hdpi)
 360 // 720*1280(xhdpi)、1080*1920(xxhdpi)、Galaxy Nexus、Nexus5、荣耀8
 384 // 768*1280(xhdpi)、Nexus4
+392 // Xiaomi Mix2
 411 // 1080*1920(420dpi)、1440*2560(560dpi)、Nexus 5x、Nexus 6、Nexus 6p、Pixel xl
 480 // 480*800(mdpi)
 540 // 540*960(mdpi)
