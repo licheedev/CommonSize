@@ -27,9 +27,9 @@ dependencies {
         // 随便选一个，没有就按照下面配置重新生成自己要的
         // 公司美工喜欢做iphone(750*1334)的图，就任意选一个w750的就行了
         // 本人所在公司的广告机项目做的图是1080P的，所以有个w1080的配置
-        compile 'com.github.licheedev.CommonSize:common_size_w1080_n1920:1.1'
-        compile 'com.github.licheedev.CommonSize:common_size_w750_n1334:1.1'
-        compile 'com.github.licheedev.CommonSize:common_size_w750_n1000:1.1'
+        implementation 'com.github.licheedev.CommonSize:common_size_w1080_n1920:1.3'
+        implementation 'com.github.licheedev.CommonSize:common_size_w750_n1334:1.3'
+        implementation 'com.github.licheedev.CommonSize:common_size_w750_n1000:1.3'
 }
 ```
 
