@@ -46,6 +46,10 @@ public class CommonSize {
 
     /**
      * dp转px
+     *
+     * @param resources
+     * @param dp
+     * @return
      */
     public static float dp2px(Resources resources, float dp) {
         return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp,
@@ -54,6 +58,10 @@ public class CommonSize {
 
     /**
      * sp转px
+     *
+     * @param context
+     * @param sp
+     * @return
      */
     public static int sp2px(Context context, float sp) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, sp,
@@ -62,6 +70,10 @@ public class CommonSize {
 
     /**
      * px转dp
+     *
+     * @param context
+     * @param px
+     * @return
      */
     public static float px2dp(Context context, float px) {
         final float scale = context.getResources().getDisplayMetrics().density;
@@ -70,6 +82,10 @@ public class CommonSize {
 
     /**
      * px转sp
+     *
+     * @param context
+     * @param px
+     * @return
      */
     public static float px2sp(Context context, float px) {
         return (px / context.getResources().getDisplayMetrics().scaledDensity);

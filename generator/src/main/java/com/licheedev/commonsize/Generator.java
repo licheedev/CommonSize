@@ -3,10 +3,12 @@ package com.licheedev.commonsize;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Generator {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Config config = new Config(new File("generator_config.properties"));
 
@@ -14,11 +16,15 @@ public class Generator {
 
         File templet = new File(Config.TEMPLET);
 
+        List<String> modules = new ArrayList<>();
+        modules.add("app");
+        modules.add("generator");
+
         for (OutputConfig outputConfig : config.outputConfigs) {
             File destModule = new File(outputConfig.getModuleName());
 
             FileUtil.removeFile(destModule);
-            
+
             if (config.justDelete) {
                 continue;
             }
@@ -34,7 +40,17 @@ public class Generator {
             }
 
             System.out.println(outputConfig);
+
+            modules.add(outputConfig.getModuleName());
         }
+
+        File settingsGradle = new File("settings.gradle");
+        FileWriter settingsGradleWriter = new FileWriter(settingsGradle, false);
+
+        for (String module : modules) {
+            settingsGradleWriter.write(String.format("include ':%s'\n", module));
+        }
+        settingsGradleWriter.flush();
     }
 
     private final Config mConfig;

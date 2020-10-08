@@ -4,6 +4,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+import com.licheedev.commonsizedemo.R;
 
 public class MainActivity extends AppCompatActivity {
 

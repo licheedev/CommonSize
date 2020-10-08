@@ -1,4 +1,4 @@
-# CommonSize
+# CommonSize [![](https://jitpack.io/v/licheedev/CommonSize.svg)](https://jitpack.io/#licheedev/CommonSize)
 Android通用屏幕适配方案
 
 ## 原理 smallestWidth
@@ -37,9 +37,10 @@ dependencies {
         // 随便选一个，没有就按照下面配置重新生成自己要的
         // 公司美工喜欢做iphone(750*1334)的图，就任意选一个w750的就行了
         // 本人所在公司的广告机项目做的图是1080P的，所以有个w1080的配置
-        implementation 'com.github.licheedev.CommonSize:common_size_w1080_n1920:1.3'
-        implementation 'com.github.licheedev.CommonSize:common_size_w750_n1334:1.3'
-        implementation 'com.github.licheedev.CommonSize:common_size_w750_n1000:1.3'
+        implementation 'com.github.licheedev.CommonSize:common_size_w1080_n1920:1.3.1'
+        implementation 'com.github.licheedev.CommonSize:common_size_w1080_n1080:1.3.1'
+        implementation 'com.github.licheedev.CommonSize:common_size_w750_n1334:1.3.1'
+        implementation 'com.github.licheedev.CommonSize:common_size_w750_n1000:1.3.1'
 }
 ```
 
@@ -51,6 +52,8 @@ dependencies {
 ![generator](https://raw.githubusercontent.com/licheedev/CommonSize/master/pics/generator.png)
 
 ### 生成器配置 generator_config.properties
+
+最小宽度列表 [smallest_width_list.txt](https://github.com/licheedev/CommonSize/blob/master/smallest_width_list.txt)
 
 ```properties
 # 输出配置，格式为w*n，其中w为参考宽度，美工的图给多少就填多少，n为dimen资源文件中，dimen条目的个数
@@ -80,23 +83,6 @@ sp_res_reg=normal_{x}sp
 smallest_width_list=smallest_width_list.txt
 # 只删除目标module
 just_delete=false
-```
-
-### 最小宽度列表 smallest_width_list.txt
-```
-// 计算公式一般为 宽度像素*160/dpi
-320 // 320*480(mdpi)、480*800(hdpi)
-360 // 720*1280(xhdpi)、1080*1920(xxhdpi)、Galaxy Nexus、Nexus5、荣耀8
-384 // 768*1280(xhdpi)、Nexus4
-392 // Xiaomi Mix2
-411 // 1080*1920(420dpi)、1440*2560(560dpi)、Nexus 5x、Nexus 6、Nexus 6p、Pixel xl
-480 // 480*800(mdpi)
-540 // 540*960(mdpi)
-600 // 600*1024(mdpi)、1200*1920(xhdpi)、Nexus 7
-768 // 768*1280(mdpi)、2048*1536(xhdpi)、Nexus 9
-800 // 800*1280(mdpi)、2560*1600(xhdpi)、Nexus 10
-900 // 900*1600(mdpi)、2560*1800(xhdpi)、Pixel C
-1080 // 1080*1920(mpdi)
 ```
 
 ## 运行情况
